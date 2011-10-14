@@ -76,7 +76,7 @@ def build_inlinepatterns(md_instance, **kwargs):
     inlinePatterns["not_strong"] = SimpleTextPattern(NOT_STRONG_RE)
     inlinePatterns["strong_em"] = DoubleTagPattern(STRONG_EM_RE, 'strong,em')
     inlinePatterns["strong"] = SimpleTagPattern(STRONG_RE, 'strong')
-    inlinePatterns["emphasis"] = SimpleTagPattern(EMPHASIS_RE, 'em')
+    inlinePatterns["emphasis"] = SimpleTagPattern(EMPHASIS_2_RE, 'em')
     if md_instance.smart_emphasis:
         inlinePatterns["emphasis2"] = SimpleTagPattern(SMART_EMPHASIS_RE, 'em')
     else:
